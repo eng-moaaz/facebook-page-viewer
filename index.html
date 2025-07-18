@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <title>صفحتي على فيسبوك</title>
+  <style>
+    html, body {
+      margin: 0; padding: 0; height: 100%; width: 100%; overflow: hidden;
+      display: flex; justify-content: center; align-items: center;
+      background-color: #f0f2f5;
+    }
+    .fb-page, .fb_iframe_widget iframe {
+      width: 100vw !important;  /* عرض كامل شاشة العرض */
+      height: 100vh !important; /* ارتفاع كامل شاشة العرض */
+      border: none;
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" 
+    src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v19.0"></script>
+
+  <div class="fb-page" 
+       data-href="https://www.facebook.com/MaiSara.SaMiir.KaMel"
+       data-tabs="timeline" 
+       data-width="500" 
+       data-height="900" 
+       data-small-header="false" 
+       data-adapt-container-width="true" 
+       data-hide-cover="false" 
+       data-show-facepile="true">
+  </div>
+</body>
+</html>
