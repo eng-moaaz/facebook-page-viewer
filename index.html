@@ -1,40 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Facebook Page Viewer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Facebook Page Iframe</title>
   <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      background: #f0f2f5;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    body, html {
+      margin: 0; padding: 0; height: 100%; overflow: hidden;
     }
-    .fb-page {
-      width: 100% !important;
-      height: 100% !important;
+    iframe {
+      border: none;
+      width: 100vw;
+      height: 100vh;
     }
   </style>
 </head>
 <body>
-  <div id="fb-root"></div>
-  <script async defer crossorigin="anonymous"
-    src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v19.0">
-  </script>
-
-  <div class="fb-page"
-    data-href="https://www.facebook.com/MaiSara.SaMiir.KaMel"
-    data-tabs="timeline"
-    data-width="500"
-    data-height="700"
-    data-small-header="false"
-    data-adapt-container-width="true"
-    data-hide-cover="false"
-    data-show-facepile="false">
-  </div>
+  <iframe src="https://www.facebook.com/MaiSara.SaMiir.KaMel" allowfullscreen></iframe>
 </body>
 </html>
